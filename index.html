@@ -163,8 +163,12 @@
 
       @media (max-width: 700px) {
         .poster {
-          width: min(calc(100vh * 736 / 1312), 100vw);
+          width: 100vw;
+          height: 100vh;
+          aspect-ratio: auto;
           border-radius: 0;
+          background-size: cover;
+          background-position: center;
         }
 
         .content {
