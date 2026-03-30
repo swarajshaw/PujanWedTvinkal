@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pujan Keshra weds Tvinkal Asani</title>
+    <style>
+      :root {
+        --gold: #a87b22;
+        --deep-gold: #7a5410;
+        --rose: #8a3b4a;
+        --cream: rgba(255, 249, 239, 0.86);
+        --card: rgba(255, 251, 245, 0.78);
+        --shadow: rgba(104, 69, 15, 0.22);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px;
+        font-family: "Georgia", "Times New Roman", serif;
+        color: var(--deep-gold);
+        background: linear-gradient(180deg, #f8eadc 0%, #f2dfcf 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(255, 255, 255, 0.5),
+            transparent 32%
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.18),
+            rgba(255, 244, 232, 0.28)
+          );
+        pointer-events: none;
+      }
+
+      .poster {
+        position: relative;
+        z-index: 1;
+        width: min(calc((100vh - 36px) * 736 / 1312), calc(100vw - 36px));
+        aspect-ratio: 736 / 1312;
+        overflow: hidden;
+        border-radius: 28px;
+        box-shadow: 0 24px 60px var(--shadow);
+        background:
+          linear-gradient(rgba(255, 248, 240, 0.08), rgba(255, 248, 240, 0.15)),
+          url("./indian-theme-template.jpg") center center / 100% 100% no-repeat;
+      }
+
+      .content {
+        position: absolute;
+        inset: 0;
+        padding: 17% 8% 12%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 20px;
+        max-width: 58%;
+        font-size: clamp(1.5rem, 2.5vw, 2.15rem);
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: var(--rose);
+        text-shadow: 0 3px 12px rgba(255, 255, 255, 0.65);
+        text-align: center;
+        text-wrap: balance;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        max-width: 78%;
+        font-size: clamp(2.15rem, 4.35vw, 4rem);
+        line-height: 1.02;
+        font-weight: 600;
+        color: var(--deep-gold);
+        text-shadow: 0 4px 18px rgba(255, 255, 255, 0.75);
+      }
+
+      .subtitle {
+        margin: 0 0 40px;
+        font-size: clamp(1rem, 2vw, 1.65rem);
+        letter-spacing: 0.04em;
+        color: var(--gold);
+        text-shadow: 0 3px 12px rgba(255, 255, 255, 0.65);
+      }
+
+      .timer {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 84%;
+      }
+
+      .unit {
+        min-height: 122px;
+        padding: 16px 10px 14px;
+        border: 1px solid rgba(168, 123, 34, 0.3);
+        border-radius: 20px;
+        background: rgba(255, 251, 245, 0.78);
+        box-shadow: 0 10px 24px rgba(168, 123, 34, 0.12);
+        backdrop-filter: blur(3px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .value {
+        display: block;
+        min-width: 2.4ch;
+        font-size: clamp(1.95rem, 3.5vw, 3rem);
+        line-height: 0.9;
+        font-weight: 700;
+        text-align: center;
+        font-variant-numeric: tabular-nums lining-nums;
+        letter-spacing: -0.03em;
+      }
+
+      .label {
+        display: block;
+        margin-top: 14px;
+        font-size: 0.82rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--rose);
+        text-align: center;
+      }
+
+      .done {
+        margin-top: 14px;
+        font-size: 1.05rem;
+        color: var(--rose);
+      }
+
+      @media (max-width: 700px) {
+        body {
+          padding: 10px;
+        }
+
+        .poster {
+          width: min(calc((100vh - 20px) * 736 / 1312), calc(100vw - 20px));
+          border-radius: 20px;
+        }
+
+        .content {
+          padding: 20% 7% 11%;
+        }
+
+        .eyebrow {
+          max-width: 64%;
+          font-size: clamp(1.15rem, 5vw, 1.75rem);
+          margin-bottom: 16px;
+        }
+
+        h1 {
+          max-width: 84%;
+        }
+
+        .subtitle {
+          margin-bottom: 30px;
+        }
+
+        .timer {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          max-width: 92%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="poster">
+      <section class="content">
+        <h1 class="eyebrow">Pujan Keshra</h1>
+        <h2 class="eyebrow">Weds</h2>
+        <h1 class="eyebrow">Tvinkal Asani</h1>
+
+        <h2>19 July 2026</h2>
+        <p class="subtitle">Our forever begins in</p>
+
+        <section class="timer" aria-label="Wedding countdown">
+          <article class="unit">
+            <span class="value" id="days">0</span>
+            <span class="label">Days</span>
+          </article>
+          <article class="unit">
+            <span class="value" id="hours">0</span>
+            <span class="label">Hours</span>
+          </article>
+          <article class="unit">
+            <span class="value" id="minutes">0</span>
+            <span class="label">Minutes</span>
+          </article>
+          <article class="unit">
+            <span class="value" id="seconds">0</span>
+            <span class="label">Seconds</span>
+          </article>
+        </section>
+
+        <p class="done" id="message" hidden>The celebration day has arrived.</p>
+      </section>
+    </main>
+
+    <script>
+      const targetDate = new Date("2026-07-19T00:00:00");
+      const values = {
+        days: document.getElementById("days"),
+        hours: document.getElementById("hours"),
+        minutes: document.getElementById("minutes"),
+        seconds: document.getElementById("seconds"),
+      };
+      const message = document.getElementById("message");
+
+      function updateCountdown() {
+        const now = new Date();
+        const difference = targetDate - now;
+
+        if (difference <= 0) {
+          Object.values(values).forEach((node) => {
+            node.textContent = "00";
+          });
+          message.hidden = false;
+          return;
+        }
+
+        const totalSeconds = Math.floor(difference / 1000);
+        const days = Math.floor(totalSeconds / 86400);
+        const hours = Math.floor((totalSeconds % 86400) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        values.days.textContent = String(days).padStart(2, "0");
+        values.hours.textContent = String(hours).padStart(2, "0");
+        values.minutes.textContent = String(minutes).padStart(2, "0");
+        values.seconds.textContent = String(seconds).padStart(2, "0");
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>
