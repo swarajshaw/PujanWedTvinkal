@@ -56,9 +56,18 @@
         overflow: hidden;
         border-radius: 0;
         box-shadow: 0 24px 60px var(--shadow);
-        background:
-          linear-gradient(rgba(255, 248, 240, 0.08), rgba(255, 248, 240, 0.15)),
-          url("./indian-theme-template.jpg") center center / 100% 100% no-repeat;
+        background: #f6ede1;
+      }
+
+      .poster-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        object-position: center;
+        image-rendering: auto;
+        transform: translateZ(0);
       }
 
       .content {
@@ -167,8 +176,6 @@
           height: auto;
           aspect-ratio: 736 / 1312;
           border-radius: 0;
-          background-size: 100% 100%;
-          background-position: center;
         }
 
         .content {
@@ -223,6 +230,13 @@
   </head>
   <body>
     <main class="poster">
+      <img
+        class="poster-image"
+        src="./indian-theme-template.jpg"
+        alt="Indian wedding invitation background"
+        width="736"
+        height="1308"
+      />
       <section class="content">
         <h1 class="eyebrow">Pujan Keshra</h1>
         <h2 class="wed">Weds</h2>
